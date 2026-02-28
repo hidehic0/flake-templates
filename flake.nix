@@ -8,7 +8,9 @@
     flake-parts.lib.mkFlake { inherit inputs; } {
       flake = {
         templates = {
-          default = ./default;
+          default = {
+            path = ./default;
+          };
         };
       };
     };
